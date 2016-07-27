@@ -1,0 +1,418 @@
+
+/***** 
+FONT FAMILIES
+*****/
+
+
+body {
+  font-family: 'Oxygen', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+}
+
+
+/***** 
+BASE STYLES 
+*****/
+
+h1 {
+  color: rgb(2,186,171);
+  font-size: 5em;
+}
+
+h2 {
+  color: white;
+  font-size: 2em;
+}
+
+h3 {
+  font-size: 1.5em;
+}
+
+h3:after {
+  content: " ";
+  width: 50px;
+  height: 2px;
+  margin: 20px auto 40px auto;
+  background-color: rgb(127,127,127);
+  display: block;
+}
+
+h4 {
+  font-weight: bold;
+}
+
+h5 {
+  font-size: 1.1em;
+  margin: 10px 0 0 0;
+}
+
+h6 {
+  color: rgb(2,186,171);
+  font-size: 1em;
+  margin: 0;
+  display: inline;
+}
+
+p {
+  font-size: .8em;
+}
+
+a {
+  color: rgb(2,186,171);
+  text-decoration: none;
+}
+
+a:visited {
+    color: rgb(109,15,174);
+  }
+
+.button {
+  display: inline-block;
+  padding: 10px;
+  border: 2px solid rgb(2,186,171);
+  color: rgb(2,186,171);
+  width: auto;
+  flex-basis: content;
+  cursor: pointer;
+}
+
+.opaquebutton {
+  background-color: rgb(2,186,171);
+  color: white;
+}
+
+.button:hover {
+  background-color: rgb(2,186,171);
+  color: white;
+}
+
+.opaquebutton:hover {
+  background-color: transparent;
+  color: rgb(2,186,171);
+}
+
+/*****
+NAVIGATION BAR 
+*****/
+
+header {
+  background-color: rgb(127,127,127);
+  color: white;
+  text-transform: uppercase;
+}
+
+#navicon {
+  height: 40px;
+  display: none;
+}
+
+#logo {
+  background: url("../img/AmberLogo.jpg") center no-repeat;
+  height: auto;
+  max-width: 100%;
+  display: inline-block;
+  margin-right: 30px;
+  float: right;
+}
+
+nav {
+  width: 75%;
+  margin: auto;
+  text-align: center; 
+  font-weight: 300;
+}
+
+nav ul, li {
+  margin: 0;
+  padding: 0;  
+  display: inline-block;
+}
+
+nav li {
+  width: 80px;
+  float: left;
+}
+
+nav a {
+  color: inherit;
+  text-decoration: none;
+  font-size: .7em;
+  margin: 20px 0;
+  display: inline-block;
+}
+
+
+/*Adds bar above each link*/
+
+.bar {
+  content: " ";
+  height: 5px;
+  width: 100%;
+  display: block;
+}
+
+
+/*Sets colors for bar */
+
+#homenav > .bar{
+  background-color: rgb(255,174,0);
+}
+
+#typonav > .bar {
+  background-color: rgb(252,113,0);
+}
+
+#blognav > .bar {
+  background-color: rgb(225,28,94);
+}
+
+#pagesnav > .bar{
+  background-color: rgb(174,15,14);
+}
+
+#elementsnav > .bar {
+  background-color: rgb(109,15,174);
+}
+
+#storenav > .bar{
+  background-color: rgb(51,34,122);
+}
+
+#meganav > .bar{
+  background-color: rgb(12,143,204);
+}
+
+.hover {
+  background-color: rgb(2,186,171) ! important;
+}
+
+/******
+IMAGE CAROUSEL BANNER
+******/
+
+#carousel {
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+
+#carousel > div {
+  text-align: center;
+}
+
+#carousel .button {
+  margin: 0 10px 30px 10px;
+}
+
+.carousel-prev,
+.carousel-next {
+  font-size: 2em;
+  color: white;
+  text-shadow: 1px 1px 2px black;
+  cursor: pointer;
+  position: absolute;
+  top: 80%;
+}
+
+.carousel-prev {
+  transform: rotate(180deg);
+  left: 10%;
+}
+
+.carousel-next {
+  right: 10%;
+}
+
+/******
+WHITE SECTIONS
+******/
+
+.white {
+  padding: 75px 0 75px 0;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+  margin: auto;
+}
+
+.white h3 {
+  flex-basis: 100%;
+}
+
+/******
+COLORED SECTIONS
+******/
+
+.colored {
+  background-color: rgb(82,82,82);
+  padding: 75px 0 75px 0;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.colored * {
+  width: 70%;
+  margin: auto;
+  color: white;
+}
+
+.colored h3:after {
+  background-color: white;
+}
+
+
+
+/*****
+FEATURES SECTION
+*****/
+
+#features div {
+  text-align: left;
+  flex: 1 0 30%;
+  padding: 0 30px 0 60px;
+}
+
+#features h4 {
+  margin-top: 0;
+}
+
+#features-creative {
+  background: url(../img/icons/star-icon.jpg) no-repeat;
+}
+
+#features-doc {
+  background: url(../img/icons/wand-icon.jpg) no-repeat;
+}
+
+#features-mouse {
+  background: url(../img/icons/cup-icon.jpg) no-repeat;
+}
+
+#features-responsive {
+  background: url(../img/icons/cloud-icon.jpg) no-repeat;
+}
+
+
+/*****
+LATEST WORKS SECTION
+******/
+
+#latest p {
+  width: 60%;
+}
+
+
+/*****
+BLOG POST SECTION
+*****/
+
+#latest-posts {
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+#latest-posts img {
+  max-width: 100%;
+}
+
+.post-teaser {
+  text-align: left;
+  flex: 0 0 30%;
+  border-bottom: 1px solid rgb(127,127,127);
+}
+
+.post-teaser p:nth-child(1) {
+  display: inline-block
+}
+
+.comment-count {
+  display: inline-block;
+  padding-left: 25px;
+  background: url(../img/icons/comment-icon.jpg) no-repeat;
+  float: right;
+}
+
+/*****
+QUOTES SECTION
+*****/
+
+#quotes span {
+  font-family: serif;
+  font-size: 10em;
+  color: rgb(2,186,171);
+}
+
+
+
+/*****
+TEAM SECTION
+*****/
+
+#team {
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+#team img {
+  max-width: 100%;
+}
+
+.team-member {
+  text-align: center;
+  flex: 0 0 24%;
+  border: 1px solid rgba(127,127,127,0.2);
+}
+
+.team-member span {
+  color: rgb(127, 127, 127);
+  font-size: .8em;
+  display: inline;
+}
+
+.team-member div {
+  border: 1px solid rgba(127,127,127,0.2);
+  background-color: white;
+  width: 80%;
+  margin: auto;
+  position: relative;
+  top: -20px;
+}
+
+.team-member .button {
+  width: 60%;
+}
+
+/*****
+CLEARFIX
+*****/
+
+.clearfix:after {
+	visibility: hidden;
+	display: block;
+	content: "";
+	clear: both;
+	height: 0;
+	}
+
+
+
+
+
+
+
+
+
